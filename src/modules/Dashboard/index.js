@@ -1,4 +1,5 @@
 import Avatar from '../../assets/avatar.svg'
+import Input from '../../components/Input'
 
 const Dashboard = () => {
   const contacts = [
@@ -61,7 +62,7 @@ const Dashboard = () => {
           </div>
          </div>
          <div className='w-[50%] h-screen bg-white flex flex-col items-center'>
-            <div className='w-[75%] bg-secondary h-[60px] mt-14 rounded-full flex items-center px-5'>
+            <div className='w-[75%] bg-secondary h-[60px] my-14 rounded-full flex items-center px-14 shadow-lg'>
                       <div className='cursor-pointer'><img src={Avatar} width={40} height={40} alt=""/></div>
                       <div className='ml-6 mr-auto'>
                          <h3 className='text-md'>Papa</h3>
@@ -78,8 +79,57 @@ const Dashboard = () => {
                        </svg>
                       </div>
             </div>
+            <div className='h-[75%] w-full overflow-y-scroll shadow-sm'>
+              <div className='p-14'>
+                <div className='max-w-[40%] bg-secondary rounded-b-xl rounded-tr-xl p-4 mb-6'>
+                  lorem is the when the of the with the for the that is why is the.
+                </div>
+                <div className='max-w-[40%] bg-primary rounded-b-xl rounded-tl-xl ml-auto p-4 text-white mb-6'>
+                  lorem is the when the of the.
+                </div>
+                <div className='max-w-[40%] bg-secondary rounded-b-xl rounded-tr-xl p-4 mb-6'>
+                  lorem is the when the of the with the for the that is why is the.
+                </div>
+                <div className='max-w-[40%] bg-primary rounded-b-xl rounded-tl-xl ml-auto p-4 text-white mb-6'>
+                  lorem is the when the of the.
+                </div>
+                <div className='max-w-[40%] bg-secondary rounded-b-xl rounded-tr-xl p-4 mb-6'>
+                  lorem is the when the of the with the for the that is why is the.
+                </div>
+                <div className='max-w-[40%] bg-primary rounded-b-xl rounded-tl-xl ml-auto p-4 text-white mb-6'>
+                  lorem is the when the of the.
+                </div>
+                <div className='max-w-[40%] bg-secondary rounded-b-xl rounded-tr-xl p-4 mb-6'>
+                  lorem is the when the of the with the for the that is why is the.
+                </div>
+                <div className='max-w-[40%] bg-primary rounded-b-xl rounded-tl-xl ml-auto p-4 text-white mb-6'>
+                  lorem is the when the of the.
+                </div>
+              </div>
+            </div>
+            <div className='p-10 w-full flex items-center'>
+               <Input placeholder='Type a message...' className='w-[75%]' 
+               inputClassName='p-4 border-0 shadow-md rounded-full bg-light focus:ring-0 focus:border-0 outline-none' />
+               <div className='ml-4 p-2 cursor-pointer bg-light rounded-full'>
+                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                 <path d="M10 14l11 -11" />
+                 <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+                 </svg>
+               </div>
+               <div className='ml-4 p-2 cursor-pointer bg-light rounded-full'>
+                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                 <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                 <path d="M9 12h6" />
+                 <path d="M12 9v6" />
+                 </svg>
+               </div>
+            </div>
          </div>
-         <div className='w-[25%] h-screen'></div>
+         <div className='w-[25%] h-screen bg-light'>
+
+         </div>
     </div>
   )
 }
